@@ -3,91 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
     <title>Рево-кофе</title>
+
 </head>
 <body>
-    <header>
+    <header class="header">
+        <img class="header__logo" src="LOGO.png" alt="Логотип">
+        <h1 class="header__title">ВАШ <span>ПЕРСОНАЛЬНЫЙ</span> КОФЕ</h1>
         <aside>
-            <img src="LOGO.png" alt="Логотип">
-        </aside>
-        <h1>ВАШ ПЕРСОНАЛЬНЫЙ КОФЕ</h1>
-        <img src="./assets/img/banner.png" alt="Баннер с кофе на главной странице">
-        <aside>
-            <ul>
-                <li><img src="./assets/icons/shopping-cart-3.png" alt="Shopping cart icon"></li>
-                <li>Главная</li>
-                <li>Кофе</li>
-                <li>Комбо наборы</li>
-                <li>Подарочные наборы</li>
-                <li>Акции</li>
-                <li>Контакты</li>
+            <ul class="header__menu">
+                <li class="header__menu-list"><img src="./assets/icons/shopping-cart-3.png" alt="Shopping cart icon"></li>
+                <li class="header__menu-list">Главная</li>
+                <li class="header__menu-list">Кофе</li>
+                <li class="header__menu-list">Комбо наборы</li>
+                <li class="header__menu-list">Подарочные наборы</li>
+                <li class="header__menu-list">Акции</li>
+                <li class="header__menu-list">Контакты</li>
             </ul>
         </aside>
     </header>
     <main>
-        <section>
-            <p>Ваш персональный кофе</p>
-            <h2>КОФЕ СОЗДАЁТ ВАШУ ОСНОВУ</h2>
-            <div>
-                <div>
+
+
+        <section class="yourcofee container">
+            <div class="yourcofee__header">
+                <p class="yourcofee__header-small">Ваш персональный кофе</p>
+                <h2 class="yourcofee__header-big">КОФЕ СОЗДАЁТ ВАШУ ОСНОВУ</h2>
+            </div>
+            <div class="yourcofee__card">
+                <div class="yourcofee__card-body">
                     <img src="./assets/icons/ic.png" alt="Векторное изображение кофе">
-                    <h3>Кофе</h3>
-                    <p>Но&nbsp;непосредственные участники технического прогресса объективно рассмотрены соответствующими инстанциями.</p>
+                    <h3 class="yourcofee__card-header">Кофе</h3>
+                    <p class="yourcofee__card-text">Но&nbsp;непосредственные участники технического прогресса объективно рассмотрены соответствующими инстанциями.</p>
                 </div>
-                <div>
+                <div class="yourcofee__card-body">
                     <img src="./assets/icons/IC (1).png" alt="Векторное изображение кофе">
-                    <h3>Кофе</h3>
-                    <p>Сложно сказать, почему диаграммы связей указаны как претенденты на&nbsp;роль ключевых факторов.</p>
+                    <h3 class="yourcofee__card-header">Кофе</h3>
+                    <p class="yourcofee__card-text">Сложно сказать, почему диаграммы связей указаны как претенденты на&nbsp;роль ключевых факторов.</p>
                 </div>
-                <div>
+                <div class="yourcofee__card-body">
                     <img src="./assets/icons/IC (2).png" alt="Векторное изображение кофе">
-                    <h3>Кофе</h3>
-                    <p>Учитывая ключевые сценарии поведения, повышение уровня гражданского сознания обеспечивает широкому кругу (специалистов) участие в&nbsp;формировании форм воздействия.</p>
+                    <h3 class="yourcofee__card-header">Кофе</h3>
+                    <p class="yourcofee__card-text">Учитывая ключевые сценарии поведения, повышение уровня гражданского сознания обеспечивает широкому кругу (специалистов) участие в&nbsp;формировании форм воздействия.</p>
                 </div>
-                <div>
+                <div class="yourcofee__card-body">
                     <img src="./assets/icons/IC (3).png" alt="Векторное изображение кофе">
-                    <h3>Кофе</h3>
-                    <p>Таким образом, новая модель организационной деятельности способствует подготовке и&nbsp;реализации глубокомысленных рассуждений!</p>
+                    <h3 class="yourcofee__card-header">Кофе</h3>
+                    <p class="yourcofee__card-text">Таким образом, новая модель организационной деятельности способствует подготовке и&nbsp;реализации глубокомысленных рассуждений!</p>
                 </div>
             </div>
         </section>
 
-        <section>
-            <p>Выберете Свой Любимый</p>
-            <h2>ВИД КОФЕ</h2>
+
+        <section class="favorite container">
+            <div class="favorite__header">
+                <p class="favorite__header-small">Выберете Свой Любимый</p>
+                <h2 class="favorite__header-big">ВИД КОФЕ</h2>
+            </div>
                 <div>
-                    <ul>
-                        <li>
+                    <ul class="favorite__card">
+                        <li class="favorite__card-body">
                             <img src="./assets/img/IMAGE.png" alt="REVO Morning">
-                            <p>99.000</p>
-                            <h3>REVO Morning</h3>
-                            <p>Прежде всего, внедрение современных методик выявляет срочную потребность укрепления моральных ценностей.</p>
-                            <button>Купить</button>
-                            <a href="">Подробнее</a>
+                            <div class="favorite__card-main">
+                                <p class="favorite__card-price">99.000</p>
+                                <h3 class="favorite__card-header">REVO Morning</h3>
+                                <p class="favorite__card-text">Прежде всего, внедрение современных методик выявляет срочную потребность укрепления моральных ценностей.</p>
+                                <div class="favorite__card-block">
+                                    <button class="favorite__card-button">Купить</button>
+                                    <a href="" class="favorite__card-link">Подробнее</a>
+                                </div>
+                            </div>
                         </li>
-                        <li>
+                        <li class="favorite__card-body">
                             <img src="./assets/img/image (1).png" alt="REVO Origin">
-                            <p>139.000</p>
-                            <h3>REVO Origin</h3>
-                            <p>И&nbsp;нет сомнений, что многие известные личности своевременно верифицированы.</p>
-                            <button>Купить</button>
-                            <a href="">Подробнее</a>
+                            <div class="favorite__card-main">
+                                <p class="favorite__card-price">139.000</p>
+                                <h3 class="favorite__card-header">REVO Origin</h3>
+                                <p class="favorite__card-text">И&nbsp;нет сомнений, что многие известные личности своевременно верифицированы.</p>
+                                <div class="favorite__card-block">
+                                    <button class="favorite__card-button">Купить</button>
+                                    <a href="" class="favorite__card-link">Подробнее</a>
+                                </div>
+                            </div>
                         </li>
-                        <li>
+                        <li class="favorite__card-body">
                             <img src="./assets/img/IMAGE (2).png" alt="REVO Everyday">
-                            <p>85.000</p>
-                            <h3>REVO Everyday</h3>
-                            <p>В&nbsp;целом, конечно, внедрение современных методик позволяет оценить значение дальнейших направлений развития.</p>
-                            <button>Купить</button>
-                            <a href="">Подробнее</a>
+                            <div class="favorite__card-main">
+                                <p class="favorite__card-price">85.000</p>
+                                <h3 class="favorite__card-header">REVO Everyday</h3>
+                                <p class="favorite__card-text">В&nbsp;целом, конечно, внедрение современных методик позволяет оценить значение дальнейших направлений развития.</p>
+                                <div class="favorite__card-block">
+                                    <button class="favorite__card-button">Купить</button>
+                                    <a href="" class="favorite__card-link">Подробнее</a>
+                                </div>
+                            </div>
                         </li>
-                        <li>
+                        <li class="favorite__card-body">
                             <img src="./assets/img/IMAGE (3).png" alt="REVO Dam Da">
-                            <p>75.000</p>
-                            <h3>REVO Dam Da</h3>
-                            <p>А&nbsp;также тщательные исследования конкурентов могут быть разоблачены.</p>
-                            <button>Купить</button>
-                            <a href="">Подробнее</a>
+                            <div class="favorite__card-main">
+                                <p class="favorite__card-price">75.000</p>
+                                <h3 class="favorite__card-header">REVO Dam Da</h3>
+                                <p class="favorite__card-text">А&nbsp;также тщательные исследования конкурентов могут быть разоблачены.</p>
+                                <div class="favorite__card-block">
+                                    <button class="favorite__card-button">Купить</button>
+                                    <a href="" class="favorite__card-link">Подробнее</a>
+                                </div>
+                            </div>
                         </li>
                         
                     </ul>
@@ -166,8 +188,8 @@
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy;&nbsp;Рево-кофе&nbsp;&mdash; 2018</p>
+    <footer class="footer">
+        <p class="footer__text">&copy;&nbsp;Рево-кофе&nbsp;&mdash; 2018</p>
     </footer>
 </body>
 </html>
