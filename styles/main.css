@@ -45,7 +45,7 @@ table {
 }
 body{
     font-family: Nunito;
-    background-color: white);
+    background-color: white;
 }
 a{
     text-decoration: none;
@@ -96,7 +96,8 @@ button{
     background-color: rgb(65 81 103);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 5%;
     height: 100vh;
     
 
@@ -116,7 +117,6 @@ button{
     height: 100vh;
     position: absolute;
     right: 0;
-
     width: 25%;
 }
 .header__link{
@@ -160,6 +160,9 @@ button{
     font-weight: 200;
 }
 
+.favorite{
+    background: linear-gradient(to right, rgb(65 81 103) 25%, white 25% );
+}
 
 .favorite__card{
     display: grid;
@@ -206,24 +209,32 @@ button{
 
 
 .best{
-    background-color: rgb(244, 244, 244);
+    background: linear-gradient(to right, rgb(234, 234, 234) 75%,  white 25% );
+    padding-bottom: 100px;
+    height: 120vh;
+
+}
+.best__mix{
+    margin-top: 70px;
+    position: relative;
+    height: 80vh;
 }
 .best__block{
-    margin-left: 50%;
-    margin-top: 5%;
     width: 35%;
-    position: relative;
-    left: -10%;
-    top: 20%;
+    position: absolute;
+    left: 30%;
     z-index: 0;
     background-color: white;
     padding: 5% 5% 5% 15%;
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
 }
+
 .best__image{
+
     width: 35%;
-    position: absolute;
+    position:absolute;
     left: 10%;
-    top: 375%;
+    top: 15%;
     z-index: 5;
 }
 .best__inner{
@@ -250,17 +261,32 @@ button{
 }
 
 
+.personal{
+    padding-bottom: 150px;
+    background: linear-gradient(to right, white 75%,  rgb(65 81 103) 25% );
+}
+.personal__card-header{
+    padding: 0;
+    margin: 0;
+}
 .personal__block{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 50px;
 }
 .personal__block-card{
     background-color: white;
     width: 25%;
 
 }
+.personal__block-card:hover{
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
 .personal__card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding: 5%;
 }
 .personal__card-image{
@@ -287,14 +313,114 @@ button{
 
 
 .footer{
-    
+    padding: 20px 0;
     text-align: center;
-    background-color: lightgray;
+    background-color: rgb(234, 234, 234);
 }
 
 .footer__text{
-    color: rgb(25, 25, 25);
+    color: rgb(99, 99, 99);
     margin: 0;
 }
 
 
+
+
+
+@media (max-width: 721px) {
+
+
+
+}
+
+
+
+
+@media (max-width: 321px) {
+    button{
+            padding: 6px 40px;
+    }
+.header{
+    height: 70vh;
+    background-size:cover;
+}
+.header__logo{
+    display: none;
+}
+.header__title{
+    top: 5%;
+    left: 2%;
+    width: 100%;
+    height: fit-content;
+}
+    .header__aside{
+        display: none;
+    }
+.container{
+        max-width: 300px;
+
+}
+.yourcofee__card{
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.favorite{
+    background: none;
+}
+.favorite__card{
+    margin-top: 70px;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+}
+.favorite__card-body{
+    flex-direction: column;
+}
+.favorite__card-main{
+    gap: 20px;
+}
+
+.best{
+    background: none;
+    height: 250vh;
+}
+.best__inner{
+    flex-direction: column;
+}
+.best__image{
+    width: 90%;
+    left: 5%;
+    top: 0;
+}
+.best__block{
+    left: 0;
+    top: 35%;
+    max-width: 290px;
+    width: 100%;
+    margin-left: 0;
+    padding: 100px 5px 20px 5px;
+}
+.favorite__card-text, .best__block-text, .personal__card-fish{
+    font-size: x-large;
+}
+.favorite__card-header, .best__block-header, .personal__card-header{
+    font-size: xx-large;
+}
+
+.personal__block{
+    flex-direction: column;
+    gap: 50px;
+}
+.personal__block-card{
+    width: 100%;
+}
+.personal{
+    padding-bottom: 50px;
+    background: none;
+}
+.personal__card-text{
+    gap: 20px;
+}
+}
