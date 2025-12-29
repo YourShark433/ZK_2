@@ -328,7 +328,94 @@ button{
 
 
 @media (max-width: 721px) {
+    button{
+            padding: 6px 40px;
+    }
+    .header{
+        height: 70vh;
+        background-size:cover;
+    }
+    .header__logo{
+        display: none;
+    }
+    .header__title{
+        top: 5%;
+        left: 2%;
+        width: 10%;
+        height: fit-content;
+    }
+        .header__aside{
+            display: none;
+        }
+    .container{
+            max-width: 680px;
 
+    }
+    .yourcofee__card{
+        flex-direction: row;
+        
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 80px;
+
+    }
+
+    .favorite{
+        background: none;
+    }
+    .favorite__card{
+        margin-top: 70px;
+        padding: 0;
+    }
+    .favorite__card-body{
+        flex-direction: column;
+    }
+    .favorite__card-main{
+        gap: 20px;
+    }
+
+    .best{
+        background: none;
+        height: 200vh;
+    }
+    .best__inner{
+        flex-direction: column;
+    }
+    .best__image{
+        width: 70%;
+        left: 15%;
+        top: 0;
+    }
+    .best__block{
+        left: calc(50% - 315px);
+        top: 75%;
+        max-width: 590px;
+        width: 100%;
+        margin-left: 0;
+        padding: 150px 20px 20px 20px;
+    }
+    .favorite__card-text, .best__block-text, .personal__card-fish{
+        font-size: large;
+    }
+    .favorite__card-header, .best__block-header, .personal__card-header{
+        font-size: x-large;
+    }
+
+    .personal__block{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    .personal__block-card{
+        width: 40%;
+    }
+    .personal{
+        padding-bottom: 50px;
+        background: none;
+    }
+    .personal__card-text{
+        gap: 20px;
+    }
 
 
 }
@@ -340,87 +427,87 @@ button{
     button{
             padding: 6px 40px;
     }
-.header{
-    height: 70vh;
-    background-size:cover;
-}
-.header__logo{
-    display: none;
-}
-.header__title{
-    top: 5%;
-    left: 2%;
-    width: 100%;
-    height: fit-content;
-}
-    .header__aside{
+    .header{
+        height: 70vh;
+        background-size:cover;
+    }
+    .header__logo{
         display: none;
     }
-.container{
-        max-width: 300px;
+    .header__title{
+        top: 5%;
+        left: 2%;
+        width: 100%;
+        height: fit-content;
+    }
+        .header__aside{
+            display: none;
+        }
+    .container{
+            max-width: 300px;
 
-}
-.yourcofee__card{
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
+    }
+    .yourcofee__card{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
 
-}
+    }
 
-.favorite{
-    background: none;
-}
-.favorite__card{
-    margin-top: 70px;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 0;
-}
-.favorite__card-body{
-    flex-direction: column;
-}
-.favorite__card-main{
-    gap: 20px;
-}
+    .favorite{
+        background: none;
+    }
+    .favorite__card{
+        margin-top: 70px;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+    .favorite__card-body{
+        flex-direction: column;
+    }
+    .favorite__card-main{
+        gap: 20px;
+    }
 
-.best{
-    background: none;
-    height: 250vh;
-}
-.best__inner{
-    flex-direction: column;
-}
-.best__image{
-    width: 90%;
-    left: 5%;
-    top: 0;
-}
-.best__block{
-    left: 0;
-    top: 35%;
-    max-width: 290px;
-    width: 100%;
-    margin-left: 0;
-    padding: 100px 5px 20px 5px;
-}
-.favorite__card-text, .best__block-text, .personal__card-fish{
-    font-size: x-large;
-}
-.favorite__card-header, .best__block-header, .personal__card-header{
-    font-size: xx-large;
-}
+    .best{
+        background: none;
+        height: 250vh;
+    }
+    .best__inner{
+        flex-direction: column;
+    }
+    .best__image{
+        width: 90%;
+        left: 5%;
+        top: 0;
+    }
+    .best__block{
+        left: 0;
+        top: 35%;
+        max-width: 290px;
+        width: 100%;
+        margin-left: 0;
+        padding: 100px 5px 20px 5px;
+    }
+    .favorite__card-text, .best__block-text, .personal__card-fish{
+        font-size: x-large;
+    }
+    .favorite__card-header, .best__block-header, .personal__card-header{
+        font-size: xx-large;
+    }
 
-.personal__block{
-    flex-direction: column;
-    gap: 50px;
-}
-.personal__block-card{
-    width: 100%;
-}
-.personal{
-    padding-bottom: 50px;
-    background: none;
-}
-.personal__card-text{
-    gap: 20px;
-}
+    .personal__block{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .personal__block-card{
+        width: 100%;
+    }
+    .personal{
+        padding-bottom: 50px;
+        background: none;
+    }
+    .personal__card-text{
+        gap: 20px;
+    }
 }
